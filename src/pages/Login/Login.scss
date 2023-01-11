@@ -1,0 +1,17 @@
+.login-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  gap: 60px;
+}
+.images-cont {
+  .logo {
+    margin-top: 80px;
+  }
+
+  .illustration {
+    margin-top: 70px;
+  }
+}
