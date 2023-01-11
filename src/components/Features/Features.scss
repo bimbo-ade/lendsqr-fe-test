@@ -1,0 +1,55 @@
+h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213f7d;
+  margin: 50px 0;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+.div1,
+.dive2,
+.div3,
+.div4 {
+  width: 240px;
+  height: 160px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin: 0 10px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  color: #213f7d;
+}
+h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #545f7d;
+}
