@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DataTable from "react-data-table-component";
 import axios from "axios";
 import "./TableDetails.scss";
 
@@ -9,10 +10,42 @@ type userProps = {
   phoneNumber: string;
   createdAt: string;
   status: string;
+  row: any;
 };
 
 const TableDetails = () => {
   const [users, setUsers] = useState<userProps[]>([]);
+
+  const [loading, setLoading] = useState(false);
+  const [perPage, setPerPage] = useState(10);
+
+  const columns = [
+    {
+      name: "ORGANIZATION",
+      selector: (row: any) => row.orgName,
+    },
+    {
+      name: "USERNAME",
+      selector: (row: any) => row.userName,
+    },
+    {
+      name: "EMAIL",
+      selector: (row: any) => row.email,
+    },
+    {
+      name: "PHONE NUMBER",
+      selector: (row: any) => row.phoneNumber,
+    },
+    {
+      name: "DATE JOINED",
+      selector: (row: any) => row.createdAt,
+    },
+    {
+      name: "STATUS",
+      selector: (row: any) => row.status,
+    },
+  ];
+
   useEffect(() => {
     const fetch = async () => {
       try {
@@ -28,54 +61,18 @@ const TableDetails = () => {
   }, []);
 
   console.log(users);
-
   return (
-    <div>
-      <div className="character-info">
-        <table className="table">
-          <tr className="col">
-            <th>
-              {" "}
-              <span> ORGANIZATION</span> icon{" "}
-            </th>
-            <th>
-              {" "}
-              <span> USERNAME</span> icon{" "}
-            </th>
-            <th>
-              {" "}
-              <span>EMAIL</span> ccon
-            </th>
-            <th>
-              {" "}
-              <span> PHONE NUMBER </span> icon
-            </th>
-            <th>
-              {" "}
-              <span>DATE JOINED </span>{" "}
-            </th>
-            <th>
-              <span>STATUS </span> icon{" "}
-            </th>
-          </tr>
-          {users.map((user) => {
-            return (
-              <tr key={user.userName} className="row">
-                <td>{user.orgName}</td>
-                <td>{user.userName}</td>
-
-                <td>{user.email}</td>
-
-                <td>{user.phoneNumber}</td>
-                <td>{user.createdAt}</td>
-
-                <td>{user.status}</td>
-              </tr>
-            );
-          })}
-        </table>
-      </div>
-    </div>
+    <>
+      {" "}
+      <DataTable
+        title=""
+        columns={columns}
+        data={users}
+        progressPending={loading}
+        pagination
+        className="table-cont"
+      />
+    </>
   );
 };
 

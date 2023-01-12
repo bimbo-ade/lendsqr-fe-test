@@ -2,8 +2,17 @@
   height: 80px;
   background: #ffffff;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.search-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+  margin-left: 25px;
+}
 .input {
   border: none;
   outline: none;
@@ -12,13 +21,26 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  width: 96%;
-  padding: 0.7rem;
-  // border: 2px solid #2f2f3b;
-  border-radius: 0.3rem;
-  align-items: left;
+  height: 40px;
+  width: 400px;
+  background: #ffffff;
+  opacity: 0.2;
+  border: 1px solid #213f7d;
+  border-radius: 8px;
+  position: relative;
 }
-svg {
-  font-size: 1.4rem;
-  color: #71717b;
+.icon {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 56px;
+  border-radius: 0 8px 8px 0px;
+  background: #39cdcc;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
 }
