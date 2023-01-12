@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 650px;
+  width: 750px;
   margin-left: 25px;
 }
 .input {
@@ -36,10 +36,15 @@
   width: 56px;
   border-radius: 0 8px 8px 0px;
   background: #39cdcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-info {
   display: flex;
+
+  width: 236px;
   justify-content: space-between;
   align-items: center;
   margin-right: 25px;
