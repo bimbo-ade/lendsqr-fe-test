@@ -8,12 +8,15 @@ import dropdown from "../../assets/images/dropdown.png";
 import bell from "../../assets/images/bell.png";
 
 import avatar from "../../assets/images/avatar.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="nav">
       {" "}
       <div className=" search-cont">
-        <img src={logo} alt="logo" width={140} />
+        <Link to="/">
+          <img src={logo} alt="logo" width={140} />{" "}
+        </Link>
         <div className="search">
           <input
             type="text"

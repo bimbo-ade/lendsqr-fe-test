@@ -1,5 +1,5 @@
 import "./Input.scss";
-
+import { Link } from "react-router-dom";
 const Input = () => {
   return (
     <>
@@ -14,7 +14,11 @@ const Input = () => {
           <div className="forgot-password">
             <h6>FORGOT PASSWORD</h6>
           </div>
-          <button>LOG IN</button>
+
+          <button>
+            {" "}
+            <Link to="/dashboard">LOG IN </Link>
+          </button>
         </div>
       </div>{" "}
     </>
