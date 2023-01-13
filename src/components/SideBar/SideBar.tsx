@@ -1,29 +1,48 @@
 import "./SideBar.scss";
+import briefcase from "../../assets/images/briefcase.png";
+
+import dropdown from "../../assets/images/dropdown.png";
+
+import descm from "../../assets/images/descm.png";
+
+import guar from "../../assets/images/guar.png";
+
+import home from "../../assets/images/home.png";
+
+import userD from "../../assets/images/userD.png";
+
+import loans from "../../assets/images/loans.png";
+
+// import briefcase from "../../assets/images/briefcase.png";
 function Sidebar() {
   return (
     <>
       <div className="sidebar-container">
         <div className="header">
-          icon
-          <span>Switch Organisation</span>icon
+          <img src={briefcase} alt="" width={16} />
+          <span>Switch Organisation</span>
+          <img src={dropdown} alt="" width={15} />
         </div>
-        <h6>Dashboard</h6>
+        <div className="dash">
+          <img src={home} alt="" width={16} />
+          <h6>Dashboard</h6>
+        </div>
+
         <div className="section-container">
           <div className="section">
             <p className="section-header">CUSTOMERS</p>
             <div className="section-link active">
-              icon <span>Users</span>
+              <img src={userD} alt="" width={16} /> <span>Users</span>
             </div>
             <div className="section-link">
-              icon
-              <span>Grantors</span>
+              <img src={guar} alt="" width={16} /> <span>Grantors</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={loans} alt="" width={16} />
               <span>Loan</span>
             </div>{" "}
             <div className="section-link">
-              icon
+              <img src={descm} alt="" width={16} />
               <span>Decision Model</span>
             </div>{" "}
             <div className="section-link">
