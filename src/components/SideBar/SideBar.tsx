@@ -17,6 +17,9 @@ import reports from "../../assets/images/reports.png";
 import servA from "../../assets/images/servA.png";
 import settlem from "../../assets/images/settlem.png";
 import trans from "../../assets/images/trans.png";
+import pref from "../../assets/images/pref.png";
+import free from "../../assets/images/free.png";
+import audit from "../../assets/images/audit.png";
 function Sidebar() {
   return (
     <>
@@ -28,7 +31,7 @@ function Sidebar() {
         </div>
         <div className="dash">
           <img src={home} alt="" width={16} />
-          <h6>Dashboard</h6>
+          <span>Dashboard</span>
         </div>
 
         <div className="section-container">
@@ -109,14 +112,14 @@ function Sidebar() {
           <div className="section">
             <p className="section-header">SETTING</p>
             <div className="section-link">
-              icon <span>Preference</span>
+              <img src={pref} alt="" width={16} /> <span>Preference</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={free} alt="" width={16} />
               <span>Fee And Pricing</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={audit} alt="" width={16} />
               <span>Audit Logs</span>
             </div>
           </div>

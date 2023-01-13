@@ -1,26 +1,24 @@
 .sidebar-container {
   width: 283px;
-  // overflow: hidden;
-
   height: 100vh;
   background: white;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
-  h6 {
-    font-family: "Work Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 20px;
-    margin-left: 25px;
-    color: #213f7d;
-  }
 }
 .section-container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
+}
+.dash {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  color: #213f7d;
 }
 .header {
   font-family: "Work Sans";
