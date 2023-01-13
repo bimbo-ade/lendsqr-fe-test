@@ -10,6 +10,13 @@ import karma from "../../assets/images/karma.png";
 import loanM from "../../assets/images/loanM.png";
 import piggy from "../../assets/images/piggy.png";
 import whitel from "../../assets/images/whitel.png";
+import bank from "../../assets/images/bank.png";
+import galaxy from "../../assets/images/galaxy.png";
+import coins from "../../assets/images/coins.png";
+import reports from "../../assets/images/reports.png";
+import servA from "../../assets/images/servA.png";
+import settlem from "../../assets/images/settlem.png";
+import trans from "../../assets/images/trans.png";
 function Sidebar() {
   return (
     <>
@@ -61,40 +68,41 @@ function Sidebar() {
           <div className="section">
             <p className="section-header">BUSINESSES</p>
             <div className="section-link">
-              icon
+              <img src={briefcase} alt="" width={16} />
               <span>Organisation</span>
             </div>
 
             <div className="section-link">
-              icon<span>Loan Products</span>
+              <img src={loanM} alt="" width={16} />
+              <span>Loan Products</span>
             </div>
 
             <div className="section-link">
-              icon
+              <img src={bank} alt="" width={16} />
               <span>Saving Products</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={coins} alt="" width={16} />
               <span>Fee and Charges</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={trans} alt="" width={16} />
               <span>Transactions</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={galaxy} alt="" width={16} />
               <span>Services</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={servA} alt="" width={16} />
               <span>Service Account</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={settlem} alt="" width={16} />
               <span>Settlements</span>
             </div>
             <div className="section-link">
-              icon
+              <img src={reports} alt="" width={16} />
               <span>Reports</span>
             </div>
           </div>{" "}
