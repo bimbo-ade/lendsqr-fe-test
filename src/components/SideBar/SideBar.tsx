@@ -1,19 +1,15 @@
 import "./SideBar.scss";
 import briefcase from "../../assets/images/briefcase.png";
-
 import dropdown from "../../assets/images/dropdown.png";
-
 import descm from "../../assets/images/descm.png";
-
 import guar from "../../assets/images/guar.png";
-
 import home from "../../assets/images/home.png";
-
 import userD from "../../assets/images/userD.png";
-
 import loans from "../../assets/images/loans.png";
-
-// import briefcase from "../../assets/images/briefcase.png";
+import karma from "../../assets/images/karma.png";
+import loanM from "../../assets/images/loanM.png";
+import piggy from "../../assets/images/piggy.png";
+import whitel from "../../assets/images/whitel.png";
 function Sidebar() {
   return (
     <>
@@ -46,19 +42,19 @@ function Sidebar() {
               <span>Decision Model</span>
             </div>{" "}
             <div className="section-link">
-              icon
+              <img src={loanM} alt="" width={16} />
               <span>Loan Request</span>
             </div>{" "}
             <div className="section-link">
-              icon
+              <img src={piggy} alt="" width={16} />
               <span>Savings</span>
             </div>{" "}
             <div className="section-link">
-              icon
+              <img src={whitel} alt="" width={16} />
               <span>Whitelist</span>
             </div>{" "}
             <div className="section-link">
-              icon
+              <img src={karma} alt="" width={16} />
               <span>Karma</span>
             </div>
           </div>
