@@ -17,7 +17,6 @@ const TableDetails = () => {
   const [users, setUsers] = useState<userProps[]>([]);
 
   const [loading, setLoading] = useState(false);
-  const [perPage, setPerPage] = useState(10);
 
   const columns = [
     {

@@ -58,6 +58,7 @@ span {
   padding: 0 25px;
   display: flex;
   align-items: center;
+  transition: 0.4s linear;
 }
 .active {
   border-left: 4px solid#39CDCC;
